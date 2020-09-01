@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#kirjauduUlos" prefHeight="578.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opintojarjestelma.FXMLOpiskelijaController">
+   <children>
+      <Text layoutX="369.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opiskelijat">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="Lisaa" layoutX="593.0" layoutY="132.0" mnemonicParsing="false" onAction="#vieTietokantaan" prefHeight="42.0" prefWidth="138.0" text="Lisää opiskelija">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="Muokkaa" layoutX="593.0" layoutY="186.0" mnemonicParsing="false" onAction="#muutaTietokannasta" prefHeight="42.0" prefWidth="138.0" text="Muokkaa">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="Poista" layoutX="593.0" layoutY="240.0" mnemonicParsing="false" onAction="#poistaTietokannasta" prefHeight="42.0" prefWidth="138.0" text="Poista">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="560.0" layoutY="331.0" mnemonicParsing="false" text="Opiskelijan kurssit">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tf1" layoutX="345.0" layoutY="83.0" prefHeight="29.0" prefWidth="165.0" promptText="Opiskelijanumero" />
+      <TextField fx:id="tf2" layoutX="345.0" layoutY="118.0" prefHeight="29.0" prefWidth="165.0" promptText="Etunimi" />
+      <TextField fx:id="tf3" layoutX="345.0" layoutY="153.0" prefHeight="29.0" prefWidth="165.0" promptText="Sukunimi" />
+      <TextField fx:id="tf4" layoutX="345.0" layoutY="193.0" prefHeight="29.0" prefWidth="165.0" promptText="Lähiosoite" />
+      <TextField fx:id="tf5" layoutX="345.0" layoutY="233.0" prefHeight="29.0" prefWidth="165.0" promptText="Postitoimipaikka" />
+      <TextField fx:id="tf6" layoutX="345.0" layoutY="270.0" prefHeight="25.0" prefWidth="165.0" promptText="Postinumero" />
+      <TextField fx:id="tf7" layoutX="345.0" layoutY="302.0" prefHeight="29.0" prefWidth="165.0" promptText="Sähköposti" />
+      <TextField fx:id="tf8" layoutX="345.0" layoutY="341.0" prefHeight="29.0" prefWidth="165.0" promptText="Puhelinnumero" />
+      <Button fx:id="Hae" layoutX="593.0" layoutY="77.0" mnemonicParsing="false" onAction="#haeKannasta" prefHeight="42.0" prefWidth="138.0" text="Hae">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ListView fx:id="txtArea" layoutX="46.0" layoutY="82.0" prefHeight="302.0" prefWidth="250.0" />
+      <Text layoutX="134.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opiskelijat">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Täällä pääset muokkaamaan, lisäämään ja poistamaan opiskelijan tietoja." wrappingWidth="684.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aloita täyttämällä ylläolevat kentät. Hakemiseen tarvitset ainoastaan opiskelijanumeron." wrappingWidth="513.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="46.0" layoutY="504.0" mnemonicParsing="false" onAction="#siirryMenuun" text="Takaisin">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="146.0" layoutY="504.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="138.0" text="Kirjaudu ulos">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

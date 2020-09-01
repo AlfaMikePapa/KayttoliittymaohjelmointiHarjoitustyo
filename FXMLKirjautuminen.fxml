@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opintojarjestelma.FXMLKirjautuminenController">
+   <children>
+      <Text layoutX="197.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kirjaudu sisään">
+         <font>
+            <Font name="System Italic" size="31.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtkayttajatunnus" layoutX="225.0" layoutY="110.0" promptText="Käyttäjätunnus" />
+      <TextField fx:id="txtSalasana" layoutX="225.0" layoutY="153.0" promptText="Salasana" />
+      <Button fx:id="btnKirjaudu" layoutX="226.0" layoutY="208.0" mnemonicParsing="false" onAction="#kirjautumisestamenuun" prefHeight="42.0" prefWidth="149.0" text="Kirjaudu">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©Aleksi Putkonen" />
+   </children>
+</AnchorPane>
