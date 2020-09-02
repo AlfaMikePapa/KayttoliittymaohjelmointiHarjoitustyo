@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opintojarjestelma.FXMLSuorituksetController">
+   <children>
+      <Text layoutX="311.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suoritukset">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tf1" layoutX="63.0" layoutY="103.0" prefHeight="29.0" prefWidth="176.0" promptText="Opiskelijatunnus" />
+      <TextField fx:id="tf2" layoutX="63.0" layoutY="142.0" prefHeight="29.0" prefWidth="176.0" promptText="Kurssi ID" />
+      <TextField fx:id="tf3" layoutX="63.0" layoutY="183.0" prefHeight="29.0" prefWidth="176.0" promptText="Arvosana" />
+      <TextField fx:id="tf4" layoutX="63.0" layoutY="221.0" prefHeight="29.0" prefWidth="176.0" promptText="Arviointipäivä" />
+      <Button fx:id="muokkaa" layoutX="285.0" layoutY="153.0" mnemonicParsing="false" onAction="#muutaTietokannassa" prefHeight="36.0" prefWidth="81.0" text="Muokkaa" />
+      <Button fx:id="lisää" layoutX="285.0" layoutY="203.0" mnemonicParsing="false" onAction="#vieTietokantaan" prefHeight="36.0" prefWidth="81.0" text="Lisää" />
+      <Button fx:id="poista" layoutX="285.0" layoutY="250.0" mnemonicParsing="false" onAction="#poistaTietokannasta" prefHeight="36.0" prefWidth="81.0" text="Poista" />
+      <Button fx:id="takaisin" layoutX="63.0" layoutY="324.0" mnemonicParsing="false" onAction="#siirryMenuun" prefHeight="52.0" prefWidth="149.0" text="Takaisin">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="458.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Täällä pääset muokkaamaan opiskelijan suorituksia. Aloita syöttämällä vaaditut tiedot." wrappingWidth="214.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="KirjauduUlos" layoutX="237.0" layoutY="324.0" mnemonicParsing="false" onAction="#kirjauduUlos" prefHeight="52.0" prefWidth="149.0" text="Kirjaudu ulos">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="hae" layoutX="285.0" layoutY="100.0" mnemonicParsing="false" onAction="#haeKannasta" prefHeight="36.0" prefWidth="81.0" text="Hae" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opintojarjestelma.FXMLKurssitController">
+   <children>
+      <Text layoutX="409.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurssit">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ListView fx:id="list" layoutX="35.0" layoutY="104.0" prefHeight="402.0" prefWidth="279.0" />
+      <Text layoutX="123.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurssin tiedot">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="bt1" layoutX="585.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Hae">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt2" layoutX="585.0" layoutY="148.0" mnemonicParsing="false" onAction="#vieTietokantaan" prefHeight="31.0" prefWidth="81.0" text="Lisää">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt3" layoutX="585.0" layoutY="193.0" mnemonicParsing="false" text="Muokkaa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt4" layoutX="585.0" layoutY="234.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Poista">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tf1" layoutX="335.0" layoutY="104.0" prefHeight="25.0" prefWidth="212.0" promptText="Kurssi ID" />
+      <TextField fx:id="tf2" layoutX="335.0" layoutY="151.0" prefHeight="25.0" prefWidth="212.0" promptText="Kurssin nimi" />
+      <TextField fx:id="tf3" layoutX="335.0" layoutY="196.0" prefHeight="25.0" prefWidth="212.0" promptText="Opintopisteet" />
+      <TextField fx:id="tf4" layoutX="335.0" layoutY="237.0" prefHeight="25.0" prefWidth="212.0" promptText="Kuvaus" />
+      <Text layoutX="335.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ole hyvä, ja syötä yllä olevat tiedot." wrappingWidth="376.1181640625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="335.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hakemiseen tarvitset ainoastaan kurssin ID:n" wrappingWidth="294.1181640625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="takaisin" layoutX="35.0" layoutY="513.0" mnemonicParsing="false" onAction="#siirryMenuun" text="Takaisin">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="117.0" layoutY="513.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="147.0" text="Kirjaudu ulos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
